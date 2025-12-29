@@ -18,3 +18,21 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
 2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
+
+# ETL Pipeline Design & Implementation
+1. Extract
+   - Raw data files were loaded directly into Bronze tables using SQL-based ingestion.
+   - No transformations were applied during extraction.
+   - Design principle: Raw data should never be altered at ingestion.
+2. Transform- Transformations were implemented entirely in SQL, with clear separation between:
+   a) Data quality transformations (Bronze → Silver)
+   b) Business logic transformations (Silver → Gold)
+3. Load
+   - Cleaned and modeled data was loaded into final warehouse tables.
+   - Tables could be safely rebuilt without corrupting downstream logic.
+  
+# Data Modeling Approach
+I implemented dimensional modeling using:
+- Fact tables for transactional metrics
+- Dimension tables for descriptive attributes
+- Proper keys (surrogate keys) to enable efficient joins

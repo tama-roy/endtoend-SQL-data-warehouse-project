@@ -1,2 +1,20 @@
-# end-to-end-SQL-data-warehouse-project
-Designing and implementing a modern SQL Server data warehouse with end-to-end ETL workflows, data modelling, and analytics.
+# End-to-end-SQL-data-warehouse-project
+I completed a full end-to-end data engineering project where the objective was to design and implement a SQL-based data warehouse from scratch, following industry-standard architecture and data engineering principles.
+
+The project was structured to replicate how production analytics data pipelines are typically built, but at a controlled, project scale.
+
+# Project Objective
+The core problem addressed was:
+How do we reliably convert raw, unstructured or semi-structured source data into clean, trusted, analytics-ready datasets that can be used by business users for reporting and decision-making?
+
+To solve this, I implemented a layered data warehouse architecture with a well-defined ETL pipeline, ensuring:
+1. Data traceability
+2. Data quality
+3. Scalability
+4. Clear separation between raw data and business logic
+
+# Data Architecture
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
+1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
+3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.

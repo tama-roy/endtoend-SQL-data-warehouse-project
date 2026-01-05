@@ -49,3 +49,5 @@ I implemented dimensional modeling using:
 - Fact tables for transactional metrics
 - Dimension tables for descriptive attributes
 - Proper keys (surrogate keys) to enable efficient joins
+
+Although implemented as a smaller, standalone project, the approach directly mirrors enterprise data pipelines and can scale with additional tooling, automation, and larger data volumes. The focus throughout was on data quality, maintainability, and business usability.

@@ -37,8 +37,9 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
    - Design principle: Raw data should never be altered at ingestion.
 
 2. Transform- Transformations were implemented entirely in SQL, with clear separation between:
-   a) Data quality transformations (Bronze → Silver)
-   b) Business logic transformations (Silver → Gold)
+
+- Data quality transformations (Bronze → Silver)
+- Business logic transformations (Silver → Gold)
 
 3. Load
    - Cleaned and modeled data was loaded into final warehouse tables.

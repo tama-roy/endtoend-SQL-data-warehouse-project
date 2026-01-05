@@ -13,6 +13,8 @@ To solve this, I implemented a layered data warehouse architecture with a well-d
 3. Scalability
 4. Clear separation between raw data and business logic
 
+## Specifications
+
 # Data Architecture
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
 1. Bronze Layer: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.

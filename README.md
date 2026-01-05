@@ -19,6 +19,9 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 2. Silver Layer: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
+<img width="1156" height="606" alt="image" src="https://github.com/user-attachments/assets/b82d8380-a141-4a44-8257-14d2d5e9d076" />
+
+
 # ETL Pipeline Design & Implementation
 1. Extract
    - Raw data files were loaded directly into Bronze tables using SQL-based ingestion.
